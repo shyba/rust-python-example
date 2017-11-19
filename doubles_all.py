@@ -122,7 +122,7 @@ def test_rust_bytes_once(benchmark):
 
 
 def test_c_swig_bytes_once(benchmark):
-    print(benchmark(myclib.count_byte_doubles, val))
+    print(benchmark(myclib.count_byte_doubles, val, len(val)))
 
 
 # def test_rust_regex(benchmark):
